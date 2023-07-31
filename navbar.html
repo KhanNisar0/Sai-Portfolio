@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <style>
+    /* Styling for the navigation bar */
+    ul.navbar {
+      list-style-type: none;
+      margin: 20;
+      padding: 0;
+      background-color: #ff7b00;
+      overflow: hidden;
+      width: 45%; /* Increase the width of the navbar */
+      height: 60px; /* Increase the height of the navbar */
+      border-radius: 0 50px 50px 0;
+    }
+
+    li.nav-item {
+      display: inline-block;
+    }
+
+    li.nav-item a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 24px;
+      text-decoration: none;
+      position: relative;
+      font-style: initial;
+      font-size: 24px; /* Increase the font size of the navigation items */
+    }
+
+    li.nav-item a::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 3px;
+      background-color: white;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: width 0.2s;
+    }
+
+    li.nav-item a:hover::after {
+      width: 100%;
+    }
+
+    /* Additional styling to center the navbar on the screen */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 100%;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <!-- Navigation bar -->
+    <ul class="navbar">
+      <li class="nav-item"><a href="#home.html">Home</a></li>
+      <li class="nav-item"><a href="#menu.html">Menu</a></li>
+      <li class="nav-item"><a href="#projects.html">Projects</a></li>
+      <li class="nav-item"><a href="#contact.html">Contact</a></li>
+      <li class="nav-item"><a href="#about.html">About Us</a></li>
+    </ul>
+  </div>
+
+  
+  <div>
+    <h1>Navbar Page</h1>
+  </div>
+
+</body>
+</html>
