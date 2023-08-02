@@ -1,132 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <!-- Bootstrap CDN -->
-      <style>
-    /* Styling for the navigation bar */
-    ul.navbar {
-      list-style-type: none;
-      margin: 5;
-      padding: 0;
-      background-color: #ff7b00;
-      overflow: hidden;
-      width: 45%; /* Increase the width of the navbar */
-      height: 60px; /* Increase the height of the navbar */
-      border-radius: 0 50px 50px 0;
-    }
+    <link rel="stylesheet" href="style.css">
+    <title>Graphic Designer Web Developer Page</title> 
 
-    li.nav-item {
-      display: inline-block;
-    }
-
-    li.nav-item a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 24px;
-      text-decoration: none;
-      position: relative;
-      font-style: initial;
-      font-size: 24px; /* Increase the font size of the navigation items */
-    }
-
-    li.nav-item a::after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 3px;
-      background-color: white;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      transition: width 0.2s;
-    }
-
-    li.nav-item a:hover::after {
-      width: 100%;
-    }
-
-    /* Additional styling to center the navbar on the screen */
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      width: 100%;
-      text-align: left;
-    }
-
-    /* My Works Div Container */
-    
-    .text {
-            color: #ff7b00;
-            text-align: center;
-            height: 80vh; /* Adjust the height as needed */
-            font-style: bold;
-            font-size: 22px;
+    <!-- Styling for NavBar Can Delete this Stylr section-->
+    <style>
+        /* Styling for the navigation bar */
+        ul.navbar {
+          list-style-type: none;
+          margin: 20;
+          padding: 0;
+          background-color: #ff7b00;
+          overflow: hidden;
+          width: 45%; /* Increase the width of the navbar */
+          height: 60px; /* Increase the height of the navbar */
+          border-radius: 0 50px 50px 0;
         }
     
-  </style>
-</head>
-<body>
-  
-  <div class="container">
-    <!-- Navigation bar -->
-    <ul class="navbar">
-      <li class="nav-item"><a href="#home.html">Home</a></li>
-      <li class="nav-item"><a href="#menu.html">Menu</a></li>
-      <li class="nav-item"><a href="#projects.html">Projects</a></li>
-      <li class="nav-item"><a href="#contact.html">Contact</a></li>
-      <li class="nav-item"><a href="#about.html">About Us</a></li>
-    </ul>
-  </div>
-
-  <!-- My Works Text Container Div -->
-  <section class="hero">
-    <div class="text">
-      <h1>My Works</h1>
-    </div>
+        li.nav-item {
+          display: inline-block;
+        }
     
-    <!-- Slider's Container Div -->
-    <div>
-      <div class="sliders">
-        <h1>sliders</h1>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="..." class="d-block w-100" style="height: 150 ;" width="150" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" style="height: 150 ;" width="150" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" style="height: 150 ;" width="150" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-      </div>
-    </div>
-  </section>
-  
+        li.nav-item a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 24px;
+          text-decoration: none;
+          position: relative;
+          font-style: initial;
+          font-size: 24px; /* Increase the font size of the navigation items */
+        }
+    
+        li.nav-item a::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 3px;
+          background-color: white;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: width 0.2s;
+        }
+    
+        li.nav-item a:hover::after {
+          width: 100%;
+        }
+    
+        /* Additional styling to center the navbar on the screen */
+        body {
+          margin: 0;
+          padding: 0;
+        }
+    
+        .container {
+          width: 100%;
+          text-align: left;
+        }
+      </style>
+</head>
 
+<body>
+
+    <main class="home">
+      <header>
+        <!-- Nav Bar Container -->
+        
+            <ul class="navbar">
+              <li class="nav-item"><a href="home.html">Home</a></li>
+              <li class="nav-item"><a href="menu.html">Menu</a></li>
+              <li class="nav-item"><a href="projects.html">Projects</a></li>
+              <li class="nav-item"><a href="contact.html">Contact</a></li>
+              <li class="nav-item"><a href="about.html">About Us</a></li>
+            </ul>
+          
+    </header>
+
+    <!--Hero Section Container -->
+    <section class="#home" id="hero">
+       
+      <!-- Text/Left Container Div-->
+        <div class="container">
+            <div class="left-container">
+                <div class="text">
+                    <h1 style="font-size: 60px; color: #ff7b00;"> <b><em> <span style="font-size: 42px; color: red;">  Hi, Looking for a </span><br>
+                        Graphic Designer <br>
+                        <u style="color: #ff7b00;">& Web Developer</u> ?</b></em> </h1>
+                        <p style="color: #ff7b00; font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet modi illo inventore distinctio pariatur hic! Nostrum temporibus deleniti quam nihil, dolores quos vero exercitationem perferendis!</p>                
+               </div>
+            </div>
+            
+            <!-- Image Container Div -->
+                <div class="round-image">
+                   <img src="" alt="Image"> 
+                </div>
+            </div>
+
+    </section>
+    </main>
 </body>
 </html>

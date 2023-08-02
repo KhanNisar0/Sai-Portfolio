@@ -8,6 +8,8 @@
 }
 
 body {
+    background-image: url('/images/whitesmoke_forest.jpg');
+            background-size: cover;
     font-family: 'Baron Neue', Arial, sans-serif;
     font-weight: 200;
     line-height: 1.2;
