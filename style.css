@@ -33,6 +33,7 @@ body {
     background-color: #ffffff;
     display: flex;
     align-items: flex-start;
+    background: transparent;
 }
 
 .right-container {
